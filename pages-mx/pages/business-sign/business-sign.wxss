@@ -1,0 +1,61 @@
+.page {
+    width: 100%;
+    height: 100%;
+    background-color: #9A171A;
+    background-size: 100% 100%;
+    background-image: url("https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/c2b/zy-fe/amp-images/bg.png");
+}
+
+.page-section {
+    display: flex;
+    flex: 1;
+    height: 450rpx;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-img {
+    width: 700rxp;
+    height: 410rpx;
+}
+
+.page-sign {
+    margin: 0 56rpx;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    margin: 28rpx 0;
+}
+
+.section_title {
+    color: #FFFFFF;
+    font-size: 32rpx;
+    width: 188rpx;
+}
+
+.section_input {
+    flex: 1;
+    height: 48rpx;
+    background-color: #FFFFFF;
+    color: #333333;
+    border-radius: 10rpx;
+    padding: 4rpx 12rpx;
+}
+
+.section_radio {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radio-item {
+  margin: 0 18rpx 12rpx 0;
+}
+
+.radio-text {
+  color: #FFFFFF;
+  font-size: 28rpx;
+}

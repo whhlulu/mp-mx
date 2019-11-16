@@ -1,5 +1,12 @@
 {
   "pages": [
+    "pages-mx/pages/index/index",
+    "pages-mx/pages/sign/sign",
+    "pages-mx/pages/photo-wall/photo-wall",
+    "pages-mx/pages/business-sign/business-sign",
+    "pages-mx/pages/notice/index",
+    "pages-mx/pages/advert/index",
+    "pages-mx/pages/about/index",
     "pages/index/index",
     "pages/cart/cart",
     "pages/goods/goods",
@@ -102,7 +109,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Mall",
+    "navigationBarTitleText": "萌心世界",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#EFEFF4"
   },

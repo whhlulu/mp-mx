@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="page-section-top">
+      <image class="top-img" mode="scaleToFill" src="https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/c2b/zy-fe/amp-images/top.png"></image>
+  </view>
+  <view class="page-notice">
+    <text>盛典新鲜事</text>[2019.12.11更新]
+  </view>
+  <view class="page-section">
+    <view class="left">tu</view>
+    <view class="right">
+      <view>
+        <view>momo老师</view>
+        <text>课题：安全小卫士</text>
+      </view>
+      <view wx:if="{{imgList}}" class="list-view">
+        <view
+          class="list-item"
+          wx:for="{{imgList}}" wx:key="item.url"
+          bindtap="previewImage" data-url="{{item.url}}" data-list="{{imgList}}"
+        >
+          <view
+            class="all"
+            wx:if="{{index === 8 && imgList.length > 9}}"
+          >
+            <view class="all-item">
+              <view>展开</view>
+              <view>全部</view>
+            </view>
+          </view>
+          <image
+            wx:if="{{index < 9}}"
+            mode="aspectFill"
+            class="item-img"
+            src="{{item.url}}"
+            data-list="{{imgList}}" data-src="{{item.url}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

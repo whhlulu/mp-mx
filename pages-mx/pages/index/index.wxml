@@ -1,0 +1,45 @@
+<view class="page">
+    <view class="page-section">
+        <swiper autoplay="true">
+            <block wx:for="{{imgList}}" wx:key="*this">
+                <swiper-item>
+                    <image style="width: 100%;" mode="aspectFit" src="{{item}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="page-section flex-row">
+        <navigator class="flex-item" url="/pages-mx/pages/sign/sign">
+            <view class="active-img">
+                <image style="width: 100%; height: 100%" mode="scaleToFill" src="/pages-mx/images/a1.jpeg"></image>
+            </view>
+        </navigator>
+        <navigator class="flex-item" url="/pages-mx/pages/photo-wall/photo-wall">
+            <image class="active-img" mode="scaleToFill" src="/pages-mx/images/a2.jpeg"></image>
+        </navigator>
+    </view>
+    <view class="page-section flex-row">
+        <navigator class="flex-item" url="/pages-mx/pages/business-sign/business-sign">
+            <image class="active-img" mode="scaleToFill" src="/pages-mx/images/a3.png"></image>
+        </navigator>
+        <navigator class="flex-item" url="/pages-mx/pages/notice/index">
+            <image class="active-img" mode="scaleToFill" src="/pages-mx/images/a4.jpeg"></image>
+        </navigator>
+    </view>
+    <view class="page-section flex-row">
+        <navigator class="flex-item img-row" url="/pages/index/index">
+            <image class="active-img" mode="scaleToFill" src="/pages-mx/images/a5.jpeg"></image>
+        </navigator>
+    </view>
+    <view class="page-section flex-row">
+        <navigator class="flex-item" url="/pages-mx/pages/advert/index">
+            <image class="active-img" mode="scaleToFill" src="/pages-mx/images/a6.png"></image>
+        </navigator>
+        <navigator class="flex-item" url="/pages-mx/pages/about/index">
+            <image class="active-img" mode="scaleToFill" src="/pages-mx/images/a7.png"></image>
+        </navigator>
+    </view>
+    <view class="footer">
+        <text class="footer-text">{{bottomTips}}</text>
+    </view>
+</view>

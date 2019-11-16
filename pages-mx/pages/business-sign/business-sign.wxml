@@ -1,0 +1,48 @@
+<view class="page">
+    <view class="page-section">
+        <image class="top-img" mode="scaleToFill" src="https://aihuishou-internal.oss-cn-hangzhou.aliyuncs.com/c2b/zy-fe/amp-images/top.png"></image>
+    </view>
+    <form bindsubmit="formSubmit">
+        <view class="page-sign">
+            <view class="section">
+                <view class="section_title">参与机构</view>
+                <input class="section_input" name="name" />
+            </view>
+            <view class="section">
+                <view class="section_title">负责人</view>
+                <input class="section_input" name="lead-name" />
+            </view>
+            <view class="section">
+                <view class="section_title">手机号码</view>
+                <input class="section_input" type="number" name="mobile" />
+            </view>
+       <view class="section">
+                <view class="section_title">地区</view>
+                <picker style="flex: 1" mode="region" bindchange="bindRegionChange" value="{{region}}" name="region" custom-item="{{customItem}}">
+                  <view class="section_input">
+                    {{region[0]}}，{{region[1]}}，{{region[2]}}
+                  </view>
+                </picker>
+            </view>
+            <view class="section">
+                <view class="section_title">推选人/公司</view>
+                <picker style="flex: 1" value="{{businessIndex}}" name="businessIndex" bindchange="bindPickerChange" range="{{businessList}}" range-key="name">
+                  <view class="section_input">
+                    {{businessList[businessIndex].name || '请选择'}}
+                  </view>
+                </picker>
+            </view>
+            <view class="section">
+                <view class="section_title">机构种类</view>
+                <radio-group class="section_radio" name="sign-type">
+                  <label wx:for="{{signTypeItems}}" wx:key="*this" class="radio-item">
+                    <radio color="#000" value="{{item}}" style="color: #fff"/>
+                    <text class="radio-text">{{item}}</text>
+                  </label>
+                
+                </radio-group>
+            </view>
+            <button type="primary" form-type="submit">提交</button>
+        </view>
+    </form>
+</view>
